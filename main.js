@@ -13,6 +13,8 @@ xmlhttp.onreadystatechange = function() {
         var weather = apiResult.weather[0].description;
 
         //add the information to the screen
+        var headerCity = document.querySelector('#location h1 span');
+        console.log(headerCity);
 
     }
 };
