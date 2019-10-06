@@ -9,12 +9,15 @@ xmlhttp.onreadystatechange = function() {
         var apiResult = JSON.parse(this.responseText);
 
         //add variables for the information
-        var city = apiResult.name;
-        var weather = apiResult.weather[0].description;
+        var city = document.createTextNode(apiResult.name);
+        var weather = document.createTextNode(apiResult.weather[0].description);
 
         //add the information to the screen
         var headerCity = document.querySelector('#location h1 span');
-        console.log(headerCity);
+        var mainWeather = document.querySelector('#weather h2 span');
+
+        headerCity.appendChild(city);
+        mainWeather.appendChild(weather);
 
     }
 };

@@ -14,6 +14,9 @@ main {
   background-color: LightBlue;
   padding: 5%;
 }
+span {
+  text-decoration: underline;
+}
 footer{
   width: 100%;
   background-color: WhiteSmoke;
