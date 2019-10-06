@@ -7,9 +7,12 @@ xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       //storing our API object inside our apiResult
         var apiResult = JSON.parse(this.responseText);
-        //Code Dealing With The API Data Goes Here
 
-        console.log(apiResult);
+        //add variables for the information
+        var city = apiResult.name;
+        var weather = apiResult.weather[0].description;
+
+        //add the information to the screen
 
     }
 };
