@@ -1,0 +1,21 @@
+body{
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  background-color: DarkGray;
+}
+header {
+  width: 100%;
+  background-color: pink;
+  padding: 5%;
+  margin-top: 5%;
+}
+main {
+  width: 100%;
+  background-color: LightBlue;
+  padding: 5%;
+}
+footer{
+  width: 100%;
+  background-color: WhiteSmoke;
+  padding: 5%;
+}
